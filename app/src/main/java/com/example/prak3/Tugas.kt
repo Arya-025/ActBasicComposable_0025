@@ -42,3 +42,16 @@ fun Tugas() {
                 contentScale = ContentScale.Crop
             )
 
+
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(top = 48.dp, bottom = 32.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Top
+            ) {
+                Text(
+                    text = "Login",
+                    color = Color.Blue,
+                    fontSize = 28.sp,
+                    fontWeight = FontWeight.Bold
