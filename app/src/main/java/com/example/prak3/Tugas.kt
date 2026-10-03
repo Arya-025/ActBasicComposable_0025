@@ -62,3 +62,61 @@ fun Tugas() {
                     color = Color.White,
                     fontSize = 14.sp
                 )
+
+                Spacer(modifier = Modifier.height(32.dp))
+
+
+                Image(
+                    painter = painterResource(id = R.drawable.logo),
+                    contentDescription = "Logo",
+                    modifier = Modifier.size(150.dp),
+                    contentScale = ContentScale.Fit
+                )
+
+                Spacer(modifier = Modifier.height(64.dp))
+
+                Text(
+                    text = "Nama",
+                    color = Color.Red,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold
+                )
+
+                Text(
+                    text = "Pascal Pahlevi Pasha",
+                    color = Color.Blue,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold
+                )
+
+                Text(
+                    text = "20000140001",
+                    color = Color.Black,
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.Bold
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+
+                Image(
+                    painter = painterResource(id = R.drawable.foto),
+                    contentDescription = "Foto",
+                    modifier = Modifier
+                        .fillMaxWidth(0.72f)
+                        .aspectRatio(1f)
+                        .clip(CircleShape)
+                        .background(Color(0xFFE8E8F4))
+                        .border(4.dp, Color.White, CircleShape),
+                    contentScale = ContentScale.Fit
+                )
+            }
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 411, heightDp = 891)
+@Composable
+fun TugasPreview() {
+    Tugas()
+}
